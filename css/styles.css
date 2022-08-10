@@ -46,7 +46,6 @@ body {
 .list {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -86,7 +85,7 @@ body {
 
 /* Контейнер */
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
@@ -130,31 +129,31 @@ body {
   border-bottom: 1px solid var(--bg-team-color);
 }
 
-.container.topline {
+.page-header__container {
   display: flex;
   align-items: center;
 }
 
 /* Логотип */
-.header.logo {
+.page-header__logo {
   color: var(--text-logo-header-color);
 }
 
-.header.logo-style {
+.page-header__logo--style {
   color: var(--accent-color);
 }
 
 /* Навигация */
-.site-nav {
+.nav {
   display: flex;
   margin-left: 93px;
 }
 
-.site-nav .item:not(:last-child) {
+.nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav .link {
+.nav__link {
   position: relative;
   display: block;
   padding-top: 32px;
@@ -170,16 +169,16 @@ body {
   transition: color 250ms var(--timing-function);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.nav__link:hover,
+.nav__link:focus {
   color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.nav__link--current {
   color: var(--accent-color);
 }
 
-.site-nav .link.current::after {
+.nav__link--current::after {
   position: absolute;
   bottom: 0;
 
@@ -194,16 +193,16 @@ body {
 }
 
 /* Контакты: почта, моб. телефон */
-.contacts {
+.contact {
   display: flex;
   margin-left: auto;
 }
 
-.contacts .item + .item {
+.contact__item + .contact__item {
   margin-left: 50px;
 }
 
-.contacts .link {
+.contact__link {
   display: flex;
   align-items: center;
 
@@ -217,14 +216,13 @@ body {
   transition: color 250ms var(--timing-function);
 }
 
-.icon.envelope,
-.icon.smartphone {
+.contact__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.contacts .link:hover,
-.contacts .link:focus {
+.contact__link:hover,
+.contact__link:focus {
   color: var(--accent-color);
 }
 
