@@ -511,10 +511,13 @@ body {
 }
 
 .feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  padding: 25px 100px;
 
   border-radius: 4px;
   background-color: var(--bg-team-color);
@@ -540,8 +543,8 @@ body {
 }
 
 .features .featur-text {
-  margin-top: 0;
-  margin-bottom: 5px;
+  margin: 0;
+  padding-bottom: 5px;
 
   font-weight: 400;
   font-size: 14px;
@@ -622,6 +625,7 @@ body {
 .team-list .about {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--bg-body-color);
 }
 
 .team-list .specialist {
