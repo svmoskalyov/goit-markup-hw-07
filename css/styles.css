@@ -170,8 +170,11 @@ body {
 
 /* Навигация */
 .nav {
-  display: flex;
   margin-left: 93px;
+}
+
+.nav__list {
+  display: flex;
 }
 
 .nav__item:not(:last-child) {
