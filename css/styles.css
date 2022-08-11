@@ -154,14 +154,14 @@ body {
   color: var(--accent-color);
 }
 
-.logo__inverse {
+/* .logo__inverse {
   color: var(--text-white-color);
-}
+} */
 
-.logo__footer {
+/* .logo__footer {
   display: inline-block;
   margin-bottom: 20px;
-}
+} */
 
 /* Логотип в шапке*/
 /* .logo__page-header {
@@ -740,18 +740,19 @@ body {
   background-color: var(--bg-footer-color);
 }
 
-/* .page-footer__logo {
+.page-footer__logo {
   display: inline-block;
   margin-bottom: 20px;
-} */
-
-.logo__footer {
-  /* display: inline-block; */
-  /* padding-top: 0; */
-  /* padding-bottom: 0; */
-  /* margin-bottom: 20px; */
-  /* color: var(--text-white-color); */
+  color: var(--text-white-color);
 }
+
+/* .logo__footer { */
+/* display: inline-block; */
+/* padding-top: 0; */
+/* padding-bottom: 0; */
+/* margin-bottom: 20px; */
+/* color: var(--text-white-color); */
+/* } */
 
 /* .footer.logo-style {
   padding-top: 0;
