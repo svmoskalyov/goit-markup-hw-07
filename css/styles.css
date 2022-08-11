@@ -88,13 +88,17 @@ body {
   text-align: center;
 }
 
-/* Лого родитель */
+/* Логотип */
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+}
+
+.logo__style {
+  color: var(--accent-color);
 }
 
 /* Контейнер */
@@ -148,13 +152,9 @@ body {
   align-items: center;
 }
 
-/* Логотип */
-.page-header__logo {
+/* Логотип в шапке*/
+.logo__page-header {
   color: var(--text-logo-header-color);
-}
-
-.page-header__logo--style {
-  color: var(--accent-color);
 }
 
 /* Навигация */
@@ -712,19 +712,19 @@ body {
   background-color: var(--bg-footer-color);
 }
 
-.footer.logo {
+.logo__footer {
   display: inline-block;
-  padding-top: 0;
-  padding-bottom: 0;
+  /* padding-top: 0; */
+  /* padding-bottom: 0; */
   margin-bottom: 20px;
   color: var(--text-white-color);
 }
 
-.footer.logo-style {
+/* .footer.logo-style {
   padding-top: 0;
   padding-bottom: 0;
   color: var(--accent-color);
-}
+} */
 
 .address .item:not(:last-child) {
   margin-bottom: 9px;
