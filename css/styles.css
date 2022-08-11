@@ -452,10 +452,6 @@ body {
   overflow: hidden;
 }
 
-.modal-input-checkbox:focus ~ .icon-check {
-  box-shadow: 0 0 0 2px rgb(0, 123, 255);
-}
-
 .icon-check {
   position: absolute;
   top: 50%;
@@ -471,6 +467,10 @@ body {
   border-radius: 4px;
 }
 
+.modal-input-checkbox:focus ~ .icon-check {
+  box-shadow: 0 0 0 2px rgb(0, 123, 255);
+}
+
 .icon-check-ok {
   position: absolute;
   top: 50%;
@@ -478,14 +478,15 @@ body {
 
   transform: translateY(-50%);
 
-  fill: var(--text-white-color);
+  fill: transparent;
 
   border-radius: 4px;
 
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 
 .modal-input-checkbox:checked ~ .icon-check-ok {
+  fill: var(--text-white-color);
   background-color: var(--accent-color);
 }
 
