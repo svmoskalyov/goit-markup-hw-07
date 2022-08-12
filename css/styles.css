@@ -722,15 +722,15 @@ body {
 /* --- */
 
 /* Постоянные клиенты */
-.clients-icons {
+.client__list {
   display: flex;
 }
 
-.client-item + .client-item {
+.client__item + .client__item {
   margin-left: 30px;
 }
 
-.client-link {
+.client__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -745,12 +745,12 @@ body {
   transition: color 250ms var(--timing-function), border 250ms var(--timing-function);
 }
 
-.client-icon {
+.client__icon {
   fill: currentColor;
 }
 
-.client-link:hover,
-.client-link:focus {
+.client__link:hover,
+.client__link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
