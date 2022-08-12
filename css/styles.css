@@ -557,19 +557,19 @@ body {
   padding-bottom: 0;
 }
 
-.featur-list {
+.features__list {
   display: flex;
 }
 
-.featur-list .item {
+.features__item {
   width: calc((100% - 90px) / 4);
 }
 
-.featur-list .item:not(:nth-child(4n)) {
+.features__item:not(:nth-child(4n)) {
   margin-right: 30px;
 }
 
-.feature-icon {
+.features__box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -582,12 +582,12 @@ body {
   background-color: var(--bg-team-color);
 }
 
-.feature-icon .icon {
+.features__icon {
   width: 70px;
   height: 70px;
 }
 
-.features .featur-title {
+.features__title {
   margin-top: 0;
   margin-bottom: 10px;
 
@@ -597,7 +597,7 @@ body {
   text-transform: uppercase;
 }
 
-.features .featur-text {
+.features__text {
   margin: 0;
   padding-bottom: 5px;
 
