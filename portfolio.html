@@ -19,7 +19,7 @@
   <body>
     <!-- Верхняя линия -->
     <header class="page-header">
-      <div class="page-header__container container">
+      <div class="container page-header__container">
         <a class="logo" href="./index.html" lang="en"><span class="logo__text">Web</span>Studio</a>
 
         <nav class="nav">
@@ -297,7 +297,7 @@
 
     <!-- Подвал -->
     <footer class="page-footer">
-      <div class="container">
+      <div class="container page-footer__container">
         <div>
           <a class="logo page-footer__logo" href="./index.html" lang="en"
             ><span class="logo__text">Web</span>Studio
@@ -305,9 +305,9 @@
 
           <address>
             <ul class="address list">
-              <li class="item">
+              <li class="address__item">
                 <a
-                  class="location"
+                  class="address__location"
                   href="https://goo.gl/maps/vhETYk33VZoTdQni7"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -315,42 +315,45 @@
                   г. Киев, пр-т Леси Украинки, 26
                 </a>
               </li>
-              <li class="item">
-                <a class="link" href="mailto:info@example.com" lang="en">info@example.com</a>
+              <li class="address__item">
+                <a class="address__link" href="mailto:info@example.com" lang="en"
+                  >info@example.com</a
+                >
               </li>
-              <li class="item"><a class="link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+              <li class="address__item">
+                <a class="address__link" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
             </ul>
           </address>
         </div>
 
-        <div class="social">
-          <h3 class="social-title">присоединяйтесь</h3>
-
-          <ul class="social-icons list">
-            <li class="social-item">
-              <a class="social-link" href="" aria-label="Ссылка на Instagram">
-                <svg class="social-icon" width="20" height="20">
+        <div class="join">
+          <h3 class="join__title">присоединяйтесь</h3>
+          <ul class="social list">
+            <li class="social__item">
+              <a class="social__link social__link--invers" href="" aria-label="Ссылка на Instagram">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a class="social-link" href="" aria-label="Ссылка на Twitter">
-                <svg class="social-icon" width="20" height="20">
+            <li class="social__item">
+              <a class="social__link social__link--invers" href="" aria-label="Ссылка на Twitter">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a class="social-link" href="" aria-label="Ссылка на Facebook">
-                <svg class="social-icon" width="20" height="20">
+            <li class="social__item">
+              <a class="social__link social__link--invers" href="" aria-label="Ссылка на Facebook">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a class="social-link" href="" aria-label="Ссылка на Linkedin">
-                <svg class="social-icon" width="20" height="20">
+            <li class="social__item">
+              <a class="social__link social__link--invers" href="" aria-label="Ссылка на Linkedin">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/icons.svg#linkedin"></use>
                 </svg>
               </a>
@@ -358,14 +361,14 @@
           </ul>
         </div>
 
-        <form class="form">
-          <h3 class="form-title">Подпишитесь на рассылку</h3>
-          <label class="form-field">
-            <input class="form-input" name="mail" type="email" placeholder="E-mail" />
+        <form class="subscribe">
+          <h3 class="subscribe__title">Подпишитесь на рассылку</h3>
+          <label class="subscribe__field">
+            <input class="subscribe__input" name="mail" type="email" placeholder="E-mail" />
           </label>
-          <button class="form-btn button hero" type="submit">
+          <button class="subscribe__button button hero__button" type="submit">
             Подписаться
-            <svg class="btn-icon" width="24" height="24">
+            <svg class="subscribe__icon" width="24" height="24">
               <use href="./images/icons.svg#send"></use>
             </svg>
           </button>
