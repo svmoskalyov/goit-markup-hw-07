@@ -103,16 +103,17 @@ body {
   padding-bottom: 94px;
 }
 
+/* --- */
 /* Социальные иконки */
-.social-icons {
+.social {
   display: flex;
 }
 
-.social-item + .social-item {
+.social__item + .social__item {
   margin-left: 10px;
 }
 
-.social-link {
+.social__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,9 +125,10 @@ body {
   transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
 }
 
-.social-icon {
+.social__icon {
   fill: currentColor;
 }
+/* --- */
 
 /* Главная страница */
 /* Верхняя линия */
@@ -656,11 +658,11 @@ body {
   background-color: var(--bg-team-color);
 }
 
-.team-list {
+.team__list {
   display: flex;
 }
 
-.team-list .item {
+.team__item {
   width: calc((100% - 90px) / 4);
   text-align: center;
 
@@ -669,21 +671,21 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list .item:not(:nth-child(4n)) {
+.team__item:not(:nth-child(4n)) {
   margin-right: 30px;
 }
 
-.team-list .img {
+.team__img {
   display: block;
 }
 
-.team-list .about {
+.team__about {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: var(--bg-body-color);
 }
 
-.team-list .specialist {
+.team__specialist {
   margin-top: 0;
   margin-bottom: 10px;
 
@@ -692,7 +694,7 @@ body {
   line-height: 1.19;
 }
 
-.team-list .position {
+.team__position {
   margin-top: 0;
   margin-bottom: 16px;
 
@@ -701,21 +703,23 @@ body {
   color: var(--text-secondory-color);
 }
 
-.team-list .social-icons {
+/* --- */
+.team__list .social {
   margin-top: 0;
   margin-right: 32px;
   margin-left: 32px;
 }
 
-.team-list .social-link {
+.team__list .social__link {
   color: var(--bg-icon-color);
 }
 
-.team-list .social-link:hover,
-.team-list .social-link:focus {
+.team__list .social__link:hover,
+.team__list .social__link:focus {
   color: var(--text-white-color);
   background-color: var(--accent-color);
 }
+/* --- */
 
 /* Постоянные клиенты */
 .clients-icons {
