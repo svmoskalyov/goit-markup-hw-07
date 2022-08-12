@@ -15,6 +15,7 @@
   Цвет акцента --accent-color: #2196f3;
   Цвет бордера на карточках --card-border: #eee;
    */
+
 :root {
   --bg-body-color: #fff;
   --bg-hero-color: #c4c4c4;
