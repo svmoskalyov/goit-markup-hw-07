@@ -782,12 +782,12 @@ body {
   color: var(--accent-color);
 } */
 
-.address .item:not(:last-child) {
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.address .location,
-.address .link {
+.address__location,
+.address__link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -797,28 +797,29 @@ body {
   transition: color 250ms var(--timing-function);
 }
 
-.address .location {
+.address__location {
   color: var(--text-white-color);
 }
 
-.address .link:hover,
-.address .link:focus,
-.address .location:hover,
-.address .location:focus {
+.address__link:hover,
+.address__link:focus,
+.address__location:hover,
+.address__location:focus {
   color: var(--accent-color);
 }
 
 /* присоединяйтесь */
-.page-footer > .container {
+.page-footer__container {
   display: flex;
 }
 
-.page-footer .social {
+.join {
+  /* display: flex; */
   margin-left: 70px;
 }
 
-.page-footer .social-title,
-.page-footer .form-title {
+.join__title,
+.subscribe__title {
   margin-top: 12px;
   margin-bottom: 20px;
 
@@ -830,26 +831,26 @@ body {
   text-transform: uppercase;
 }
 
-.page-footer .social-link {
+.social__link--invers {
   color: var(--text-white-color);
   background: var(--bg-icon-footer-color);
 }
 
-.page-footer .social-link:hover,
-.page-footer .social-link:focus {
+.social__link--invers:hover,
+.social__link--invers:focus {
   background-color: var(--accent-color);
 }
 
 /* Подпишитесь на рассылку */
-.form {
+.subscribe {
   margin-left: 93px;
 }
 
-.form-field {
+.subscribe__field {
   display: inline-block;
 }
 
-.form-field > .form-input {
+.subscribe__input {
   padding: 16px;
   width: 358px;
   height: 50px;
@@ -862,7 +863,7 @@ body {
   border-radius: 4px;
 }
 
-.form > .form-btn {
+.subscribe__button {
   position: relative;
   margin-left: 12px;
   padding: 0;
@@ -873,7 +874,7 @@ body {
   text-align: left;
 }
 
-.form-btn > .btn-icon {
+.subscribe__icon {
   position: absolute;
   top: 50%;
   right: 28px;
