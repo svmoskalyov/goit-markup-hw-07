@@ -608,26 +608,26 @@ body {
 }
 
 /* Чем мы занимаемся */
-.wemake-list {
+.wemake__list {
   display: flex;
 }
 
-.wemake-list .item {
+.wemake__item {
   width: calc((100% - 60px) / 3);
 }
 
-.wemake-list .item:not(:nth-child(3n)) {
+.wemake__item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
 /* текст с фоном */
-.product-thumb {
+.wemake__tumb {
   position: relative;
   z-index: 1;
   display: flex;
 }
 
-.background-tumb {
+.wemake__background {
   position: absolute;
   bottom: 0;
 
@@ -641,7 +641,7 @@ body {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.background-tumb > .text {
+.wemake__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
