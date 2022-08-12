@@ -255,12 +255,12 @@ body {
 }
 
 /* Герой */
-.hero.section {
+.hero {
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
-.hero.overlay {
+.hero__overlay {
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -277,11 +277,13 @@ body {
   background-color: var(--bg-hero-color);
 }
 
-.hero.title {
-  max-width: 696px;
+.hero__title {
+  margin-top: 0;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
+
+  max-width: 696px;
 
   font-weight: 900;
   font-size: 44px;
@@ -291,7 +293,7 @@ body {
   text-transform: uppercase;
 }
 
-.hero.button {
+.hero__button {
   padding-top: 10px;
   padding-right: 32px;
   padding-bottom: 10px;
@@ -302,7 +304,11 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--text-white-color);
+
   background-color: var(--accent-color);
+  border: 0ch;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 /* Фон */
@@ -320,17 +326,13 @@ body {
   transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
 }
 
-.backdrop.is-hidden {
+.backdrop--hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
 
 /* Модальное окно */
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.1);
-}
-
 .modal {
   position: relative;
   top: 50%;
@@ -350,7 +352,11 @@ body {
   transition: transform 250ms var(--timing-function);
 }
 
-.modal-button-close {
+.backdrop--hidden > .modal {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.button-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -370,7 +376,7 @@ body {
   cursor: pointer;
 }
 
-.modal-icon-close {
+.button-close__icon {
   position: absolute;
   top: 0;
   right: 0;
@@ -379,33 +385,33 @@ body {
   width: 100%;
 }
 
-.modal-button-close:hover,
-.modal-button-close:focus {
+.button-close:hover,
+.button-close:focus {
   fill: var(--accent-color);
 }
 
-.modal-title {
+.modal__title {
   margin: 0;
   margin-bottom: 12px;
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.17;
 }
 
-.modal-field {
+.modal__field {
   display: block;
   margin-bottom: 10px;
   text-align: left;
 }
 
-.modal-label {
+.modal__label {
   display: inline-block;
   margin-bottom: 4px;
 }
 
-.modal-label,
-.modal-comment::placeholder {
+.modal__label,
+.modal__comment::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -413,12 +419,12 @@ body {
   color: var(--text-secondory-color);
 }
 
-.modal-textfield {
+.modal__textfield {
   position: relative;
 }
 
-.modal-input,
-.modal-comment {
+.modal__input,
+.modal__comment {
   padding: 0;
   padding-left: 40px;
   width: 100%;
@@ -428,7 +434,7 @@ body {
   border-radius: 4px;
 }
 
-.modal-icon {
+.modal__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -438,23 +444,23 @@ body {
   transition: fill 250ms var(--timing-function);
 }
 
-.modal-field:focus-within .modal-icon {
+.modal__field:focus-within .modal__icon {
   fill: var(--accent-color);
 }
 
-.modal-comment {
+.modal__comment {
   margin: 0;
   padding: 12px 16px;
   resize: none;
   height: 120px;
 }
 
-.modal-comment::placeholder {
+.modal__comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
 /* Чекбокс */
-.modal-field-checkbox {
+.check {
   position: relative;
   display: inline-block;
   margin-bottom: 30px;
@@ -468,7 +474,7 @@ body {
   color: var(--text-secondory-color);
 }
 
-.modal-input-checkbox {
+.check__input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -479,11 +485,11 @@ body {
   overflow: hidden;
 }
 
-.modal-contract {
+.check__contract {
   color: var(--accent-color);
 }
 
-.icon-check {
+.check__box {
   position: absolute;
   top: 50%;
   left: 0;
@@ -498,11 +504,11 @@ body {
   border-radius: 4px;
 }
 
-.modal-input-checkbox:focus ~ .icon-check {
+.check__input:focus ~ .check__box {
   box-shadow: 0 0 0 2px rgb(0, 123, 255);
 }
 
-.icon-check-ok {
+.check__icon {
   position: absolute;
   top: 50%;
   left: 0;
@@ -516,23 +522,32 @@ body {
   transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 
-.modal-input-checkbox:checked ~ .icon-check-ok {
+.check__input:checked ~ .check__icon {
   fill: var(--text-white-color);
   background-color: var(--accent-color);
 }
 
-.modal-btn {
+.modal__button {
   padding: 0;
   width: 200px;
   height: 50px;
 
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
   color: var(--text-white-color);
 
+  background-color: var(--accent-color);
+  border: 0ch;
+  border-radius: 4px;
+
+  cursor: pointer;
   transition: background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.modal__button:hover,
+.modal__button:focus {
   background-color: var(--bg-btn-modal-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
