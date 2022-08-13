@@ -157,19 +157,9 @@ body {
   color: var(--accent-color);
 }
 
-/* .logo__inverse {
+.logo--revers {
   color: var(--text-white-color);
-} */
-
-/* .logo__footer {
-  display: inline-block;
-  margin-bottom: 20px;
-} */
-
-/* Логотип в шапке*/
-/* .logo__page-header {
-  color: var(--text-logo-header-color);
-} */
+}
 
 /* Навигация */
 .nav {
@@ -765,7 +755,6 @@ body {
 .page-footer__logo {
   display: inline-block;
   margin-bottom: 20px;
-  color: var(--text-white-color);
 }
 
 .address__item:not(:last-child) {
