@@ -825,8 +825,8 @@ body {
   margin-left: 93px;
 }
 
-.subscribe__field {
-  display: inline-block;
+.subscribe__box {
+  display: flex;
 }
 
 .subscribe__input {
