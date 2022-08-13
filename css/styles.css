@@ -104,13 +104,12 @@ body {
   padding-bottom: 94px;
 }
 
-/* --- */
 /* Социальные иконки */
 .social {
-  display: flex;
+  display: inline-flex;
 }
 
-.social__item + .social__item {
+.social__item:not(:first-child) {
   margin-left: 10px;
 }
 
@@ -121,15 +120,29 @@ body {
   width: 44px;
   height: 44px;
 
+  fill: var(--bg-icon-color);
+
   border-radius: 50%;
 
-  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 
-.social__icon {
-  fill: currentColor;
+.social__link:hover,
+.social__link:focus {
+  fill: var(--text-white-color);
+  background-color: var(--accent-color);
 }
-/* --- */
+
+/* social for footer */
+.social__link--invers {
+  fill: var(--text-white-color);
+  background: var(--bg-icon-footer-color);
+}
+
+.social__link--invers:hover,
+.social__link--invers:focus {
+  background-color: var(--accent-color);
+}
 
 /* Главная страница */
 /* Верхняя линия */
@@ -698,18 +711,6 @@ body {
   margin-right: 32px;
   margin-left: 32px;
 }
-
-/* - */
-.team__list .social__link {
-  color: var(--bg-icon-color);
-}
-
-.team__list .social__link:hover,
-.team__list .social__link:focus {
-  color: var(--text-white-color);
-  background-color: var(--accent-color);
-}
-/* - */
 
 /* Постоянные клиенты */
 .client__list {
