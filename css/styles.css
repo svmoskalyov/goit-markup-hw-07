@@ -704,13 +704,12 @@ body {
   color: var(--text-secondory-color);
 }
 
-/* --- */
-.team__list .social {
-  margin-top: 0;
+.team__social {
   margin-right: 32px;
   margin-left: 32px;
 }
 
+/* - */
 .team__list .social__link {
   color: var(--bg-icon-color);
 }
@@ -720,7 +719,7 @@ body {
   color: var(--text-white-color);
   background-color: var(--accent-color);
 }
-/* --- */
+/* - */
 
 /* Постоянные клиенты */
 .client__list {
@@ -769,20 +768,6 @@ body {
   color: var(--text-white-color);
 }
 
-/* .logo__footer { */
-/* display: inline-block; */
-/* padding-top: 0; */
-/* padding-bottom: 0; */
-/* margin-bottom: 20px; */
-/* color: var(--text-white-color); */
-/* } */
-
-/* .footer.logo-style {
-  padding-top: 0;
-  padding-bottom: 0;
-  color: var(--accent-color);
-} */
-
 .address__item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -815,7 +800,6 @@ body {
 }
 
 .join {
-  /* display: flex; */
   margin-left: 70px;
 }
 
@@ -867,12 +851,14 @@ body {
 .subscribe__button {
   position: relative;
   margin-left: 12px;
-  padding: 0;
   padding-left: 29px;
   width: 200px;
   height: 50px;
 
   text-align: left;
+
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .subscribe__icon {
