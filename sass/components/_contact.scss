@@ -10,12 +10,7 @@
 
 .contact__link {
   @include centeredFlex();
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: getColor(text-secondory);
+  @include itemTypography(500, 14px, 1.14, 0.02em, text-secondory);
   text-decoration: none;
 
   @include itemTransition(color);
