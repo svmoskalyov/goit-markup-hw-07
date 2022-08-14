@@ -1,0 +1,21 @@
+@mixin centeredFlex($type: flex) {
+    display: $type;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+// div1 {
+//     @include centeredFlex(); //default flex
+// }
+
+// div2 {
+//     @include centeredFlex(inline-flex);
+// }
+
+

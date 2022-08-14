@@ -31,6 +31,7 @@
   --link-footer-color: rgba(255, 255, 255, 0.6);
   --accent-color: #2196f3;
   --card-border: #eee;
+
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -97,7 +98,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  letter-spacing: 0.03em;
+  /* letter-spacing: 0.03em; */
   color: var(--text-primary-color);
 
   background-color: var(--bg-team-color);
@@ -661,7 +662,7 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
+  /* letter-spacing: 0.03em; */
   text-transform: uppercase;
 
   color: var(--text-white-color);

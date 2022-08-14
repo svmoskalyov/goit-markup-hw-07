@@ -1,0 +1,31 @@
+$colors: (
+  'accent': #2196f3,
+  'bg-body': #fff,
+  'bg-hero': #c4c4c4,
+  'bg-team': #f5f4fa,
+  'bg-footer': #2f303a,
+  'bg-icon': #afb1b8,
+  'bg-icon-footer': rgba(255, 255, 255, 0.1),
+  'bg-btn-modal': #188ce8,
+  'text-primary': #212121,
+  'text-secondory': #757575,
+  'text-white': #fff,
+  'logo-main': #000,
+  'logo-revers': #fff,
+  'link-footer': rgba(255, 255, 255, 0.6),
+  'card-border': #eee,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+$font: (
+  'primary': Roboto,
+  'secondory': sans-serif,
+  'logo': Raleway,
+);
+
+@function getFont($key) {
+  @return map-get($font, $key);
+}
