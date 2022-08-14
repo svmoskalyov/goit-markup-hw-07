@@ -16,4 +16,24 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.logo--revers, .logo__main {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo__text {
+  color: #2196f3;
+}
+
+.logo__main {
+  color: #000;
+}
+
+.logo--revers {
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

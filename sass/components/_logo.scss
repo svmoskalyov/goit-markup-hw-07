@@ -1,0 +1,23 @@
+@import '../utils/variables';
+
+%logo {
+  font-family: getFont(logo), getFont(secondory);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo__text {
+  color: getColor(accent);
+}
+
+.logo__main {
+  @extend %logo;
+  color: getColor(logo-main);
+}
+
+.logo--revers {
+  @extend %logo;
+  color: getColor(logo-revers);
+}
