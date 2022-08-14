@@ -1,13 +1,6 @@
-@import '../utils/variables';
-@import '../utils/mixin';
-
 %logo {
+  @include itemTypography(700, 26px, 1.19, 0.03em, logo-main);
   font-family: getFont(logo), getFont(secondory);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
 }
 
 .logo__text {
@@ -16,7 +9,6 @@
 
 .logo__main {
   @extend %logo;
-  color: getColor(logo-main);
 
   &--revers {
     @extend %logo;
