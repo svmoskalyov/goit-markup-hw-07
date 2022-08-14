@@ -1,8 +1,9 @@
+@import '../utils/mixin';
+
 .page-header {
-  border-bottom: 1px solid var(--bg-team-color);
+  border-bottom: 1px solid getColor(bg-team);
 }
 
 .page-header__container {
-  display: flex;
-  align-items: center;
+  @include centeredFlex();
 }
