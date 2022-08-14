@@ -1,4 +1,5 @@
 @import '../utils/list';
+@import '../utils/mixin';
 
 .nav {
   margin-left: 93px;
@@ -6,7 +7,7 @@
 
 .nav__list {
   @extend %list;
-  display: flex;
+  @include centeredFlex();
 }
 
 .nav__item:not(:last-child) {
@@ -23,31 +24,31 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--text-primary-color);
+  color: getColor(text-primary);
   text-decoration: none;
 
-  transition: color 250ms var(--timing-function);
-}
+  @include itemTransition(color);
 
-.nav__link:hover,
-.nav__link:focus {
-  color: var(--accent-color);
-}
+  &:hover,
+  &:focus {
+    color: getColor(accent);
+  }
 
-.nav__link--current {
-  color: var(--accent-color);
-}
+  &--current {
+    color: getColor(accent);
+  }
 
-.nav__link--current::after {
-  position: absolute;
-  bottom: 0;
+  &--current::after {
+    position: absolute;
+    bottom: 0;
 
-  display: block;
+    display: block;
 
-  content: '';
-  width: 100%;
-  height: 4px;
+    content: '';
+    width: 100%;
+    height: 4px;
 
-  background-color: var(--accent-color);
-  border-radius: 2px;
+    background-color: getColor(accent);
+    border-radius: 2px;
+  }
 }

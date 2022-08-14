@@ -1,7 +1,6 @@
 @import '../utils/variables';
 @import '../utils/mixin';
 
-
 %logo {
   font-family: getFont(logo), getFont(secondory);
   font-weight: 700;
@@ -25,14 +24,3 @@
     color: getColor(logo-revers);
   }
 }
-
-// .logo--revers {
-//   @extend %logo;
-//   color: getColor(logo-revers);
-// }
-
-
-// .page-footer__logo {
-//   display: inline-block;
-//   margin-bottom: 20px;
-// }
