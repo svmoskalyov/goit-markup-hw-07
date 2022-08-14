@@ -11,7 +11,6 @@
 .contact__link {
   @include centeredFlex();
   @include itemTypography(500, 14px, 1.14, 0.02em, text-secondory);
-  text-decoration: none;
 
   @include itemTransition(color);
 

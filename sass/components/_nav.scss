@@ -12,19 +12,13 @@
 }
 
 .nav__link {
+  @include itemTypography(500, 14px, 1.14, 0.02em, text-primary);
+  @include itemTransition(color);
+
   position: relative;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: getColor(text-primary);
-  text-decoration: none;
-
-  @include itemTransition(color);
 
   &:hover,
   &:focus {
