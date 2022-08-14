@@ -1,4 +1,6 @@
 @import '../utils/variables';
+@import '../utils/mixin';
+
 
 %logo {
   font-family: getFont(logo), getFont(secondory);
@@ -15,9 +17,22 @@
 .logo__main {
   @extend %logo;
   color: getColor(logo-main);
+
+  &--revers {
+    @extend %logo;
+    @include centeredFlex(inline-flex);
+    margin-bottom: 20px;
+    color: getColor(logo-revers);
+  }
 }
 
-.logo--revers {
-  @extend %logo;
-  color: getColor(logo-revers);
-}
+// .logo--revers {
+//   @extend %logo;
+//   color: getColor(logo-revers);
+// }
+
+
+// .page-footer__logo {
+//   display: inline-block;
+//   margin-bottom: 20px;
+// }
