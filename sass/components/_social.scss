@@ -28,14 +28,13 @@
     fill: getColor(text-white);
     background-color: getColor(accent);
   }
-
   &--invers {
     fill: getColor(text-white);
-    background: getColor(bg-footer);
+    background-color: getColor(bg-icon-footer);
   }
 
   &--invers:hover,
   &--invers:focus {
-    background: getColor(accent);
+    background-color: getColor(accent);
   }
 }
