@@ -10,9 +10,11 @@
 
 .contact__link {
   @include centeredFlex();
-  @include itemTypography(500, 14px, 1.14, 0.02em, text-secondory);
-
+  @include itemTypography(500, 14px, 1.14);
   @include itemTransition(color);
+
+  letter-spacing: 0.02em;
+  color: getColor(text-secondory);
 
   &:hover,
   &:focus {

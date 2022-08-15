@@ -20,20 +20,6 @@
   background-color: getColor(bg-hero);
 }
 
-// transfer to in title
-.hero__title {
-  @include itemTypography(900, 44px, 1.36, 0.06em, text-white);
-
-  margin-top: 0;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 30px;
-
-  max-width: 696px;
-
-  text-transform: uppercase;
-}
-
 // transfer to in buttle
 .hero__button {
   padding-top: 10px;
