@@ -46,3 +46,8 @@
   margin-bottom: 12px;
   font-size: 20px;
 }
+
+.features__title,
+.portfolio__title {
+  @extend %visually-hidden;
+}
