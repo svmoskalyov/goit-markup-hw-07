@@ -16,6 +16,7 @@ $colors: (
   'card-border': #eee,
   'modal-border': rgba(33, 33, 33, 0.2),
   'modal-placeholder': rgba(117, 117, 117, 0.5),
+  'wemake-background': rgba(47, 48, 58, 0.8),
 );
 
 @function getColor($key) {
