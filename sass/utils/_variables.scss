@@ -14,6 +14,8 @@ $colors: (
   'logo-revers': #fff,
   'link-footer': rgba(255, 255, 255, 0.6),
   'card-border': #eee,
+  'modal-border': rgba(33, 33, 33, 0.2),
+  'modal-placeholder': rgba(117, 117, 117, 0.5),
 );
 
 @function getColor($key) {
