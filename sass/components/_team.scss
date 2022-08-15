@@ -4,6 +4,7 @@
 
 .team__list {
   @include centeredFlex();
+  @extend %list;
 }
 
 .team__item {
