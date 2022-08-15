@@ -1,9 +1,14 @@
 @import './utils/variables';
 @import './utils/list';
 @import './utils/visually-hidden';
+
 @import './components/body';
 @import './components/container';
 @import './components/section';
+
+@import './components/social';
+@import './components/title';
+@import './components/button';
 
 @import './components/page-header';
 @import './components/logo';
@@ -11,10 +16,3 @@
 @import './components/contact';
 
 @import './components/hero';
-
-
-@import './components/social';
-@import './components/title';
-@import './components/button';
-
-
