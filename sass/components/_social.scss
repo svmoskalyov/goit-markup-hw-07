@@ -1,5 +1,3 @@
-@import '../utils/mixin';
-
 .social {
   @include centeredFlex(inline-flex);
   @extend %list;
